@@ -6,5 +6,10 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { provideStore } from '@ngrx/store';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), provideStore()]
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(routes),
+    provideClientHydration(),
+    provideStore(),
+  ],
 };
