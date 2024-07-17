@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    standalone: true,
+    standalone: false,
     selector: 'decrement-number',
     template: '<button>{{reduce}}</button>',
     styleUrl: '../CSS/decrement.component.css',
