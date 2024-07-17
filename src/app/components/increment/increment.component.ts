@@ -4,7 +4,7 @@ import { IncrementModule } from './increment.module';
 @Component({
   selector: 'app-increment',
   standalone: true,
-  imports: [IncrementModule],
+  imports: [],
   templateUrl: './increment.component.html',
   styleUrl: './increment.component.css'
 })
