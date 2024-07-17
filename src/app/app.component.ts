@@ -14,5 +14,6 @@ import { IncrementModule } from './components/increment/increment.module';
 export class AppComponent {
   title = 'Angular_practice';
   IncrementComponent = IncrementComponent;
+  IncrementModule = IncrementModule;
   // NgModuleModule = NgModuleModule;
 }
