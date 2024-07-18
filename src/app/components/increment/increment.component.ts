@@ -1,13 +1,15 @@
-import { Component, Directive } from '@angular/core';
+import { Component } from '@angular/core';
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { increment } from '../../counter.actions';
+import {MatButtonModule} from '@angular/material/button'
 
 @Component({
   selector: 'app-increment',
   standalone: true,
-  template: '<button (click)="increment()">{{increase}}</button>',
-  styleUrl: './increment.component.css'
+  template: '<button mat-raised-button (click)="increment()">{{increase}}</button>',
+  styleUrl: './increment.component.css',
+  imports: [MatButtonModule]
 })
 
 export class IncrementComponent {

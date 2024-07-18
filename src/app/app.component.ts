@@ -32,8 +32,4 @@ export class AppComponent {
       }
     });
   }
-
-  // IncrementComponent = IncrementComponent;
-  // IncrementModule = IncrementModule;
-  // NgModuleModule = NgModuleModule;
 }
