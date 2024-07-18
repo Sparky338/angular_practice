@@ -2,7 +2,7 @@ button[mat-raised-button] {
     border-radius: 30px;
     width: 150px;
     height: 100px;
-    background-color: red;
+    background-color: #dc2c87;
     color: aliceblue;
     font-size: 50px;
     font-weight: 800;
