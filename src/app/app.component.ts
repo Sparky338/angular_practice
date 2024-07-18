@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { AppModule } from './app.module';
 import { IncrementComponent } from './components/increment/increment.component';
-import { IncrementModule } from './components/increment/increment.module';
 import { CounterComponent } from './components/counter/counter.component';
 import { DecrementComponent } from './components/decrement.component';
 import { Observable } from 'rxjs';
-import { StoreModule } from '@ngrx/store';
-import { counterReducer } from './counter.reducer';
+
 
 @Component({
   selector: 'app-root',
@@ -17,9 +14,7 @@ import { counterReducer } from './counter.reducer';
     RouterOutlet,
     IncrementComponent,
     DecrementComponent,
-    // IncrementModule,
     CounterComponent,
-    // AppModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
