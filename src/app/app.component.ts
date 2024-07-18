@@ -5,6 +5,7 @@ import { IncrementComponent } from './components/increment/increment.component';
 import { IncrementModule } from './components/increment/increment.module';
 import { CounterComponent } from "./components/counter/counter.component";
 import { DecrementComponent } from './components/decrement.component';
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { DecrementComponent } from './components/decrement.component';
 })
 export class AppComponent {
   title = 'Gametime Hero score counter';
-  score = 0;
+  count$!: Observable<number>;
+  score = this.count$;
   // IncrementComponent = IncrementComponent;
   // IncrementModule = IncrementModule;
   // NgModuleModule = NgModuleModule;
