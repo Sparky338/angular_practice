@@ -14,8 +14,8 @@ import { DecrementComponent } from './components/decrement.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Angular_practice';
-  IncrementComponent = IncrementComponent;
-  IncrementModule = IncrementModule;
+  title = 'Gametime Hero score counter';
+  // IncrementComponent = IncrementComponent;
+  // IncrementModule = IncrementModule;
   // NgModuleModule = NgModuleModule;
 }
