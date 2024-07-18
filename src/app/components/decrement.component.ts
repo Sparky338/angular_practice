@@ -15,12 +15,23 @@ import { MatButtonModule } from "@angular/material/button";
 export class DecrementComponent {
     reduce = '-';
     count$!: Observable<number>;
+    score: number = 0;
 
     constructor(private store: Store<{count: number}>) {
         this.count$ = store.select('count');
     }
 
     decrement() {
-        this.store.dispatch(decrement());
+        this.count$.subscribe({
+            next: (value) => {
+              this.score = value;
+            }
+          });
+
+        if (this.score > 0){
+            this.store.dispatch(decrement());
+        } else {
+            window.alert("The score can't be less than 0.")
+        }
     }
 }

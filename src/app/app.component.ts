@@ -20,7 +20,7 @@ import { Observable } from 'rxjs';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Gametime Hero score counter';
+  title = 'Gametime Hero Score Counter';
   count$!: Observable<number>;
   score: number = 0;
 
