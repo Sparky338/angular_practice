@@ -11,11 +11,11 @@ import { IncrementComponent } from './components/increment/increment.component';
 @NgModule({
   declarations: [],
   imports: [
-    AppComponent,
-    BrowserModule,
-    IncrementComponent,
-    DecrementComponent,
-    StoreModule.forRoot({ count: counterReducer }),
+    // AppComponent,
+    // BrowserModule,
+    // IncrementComponent,
+    // DecrementComponent,
+    StoreModule.forRoot({count: counterReducer}),
   ],
   providers: [],
   bootstrap: [],
