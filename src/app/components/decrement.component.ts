@@ -2,12 +2,14 @@ import { Component } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { decrement } from "../counter.actions";
+import { MatButtonModule } from "@angular/material/button";
 
 @Component({
     selector: 'app-decrement',
     standalone: true,
-    template: '<button (click)="decrement()">{{reduce}}</button>',
+    template: '<button mat-raised-button  (click)="decrement()">{{reduce}}</button>',
     styleUrl: '../CSS/decrement.component.css',
+    imports: [MatButtonModule]
 })
 
 export class DecrementComponent {

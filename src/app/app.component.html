@@ -4,20 +4,20 @@
 
   <div class="score-and-buttons">
 
-    <!-- displays decrement button through counter component -->
-    <app-counter [template]="decrement"></app-counter>
-
-    <ng-template #decrement>
-      <app-decrement></app-decrement>
-    </ng-template>
-
-    <h1 class="score">{{score}}</h1>
-
     <!-- displays increment button through counter component -->
     <app-counter [template]="increment"></app-counter>
 
     <ng-template #increment>
       <app-increment></app-increment>
+    </ng-template>
+
+    <h1 class="score">{{score}}</h1>
+
+    <!-- displays decrement button through counter component -->
+    <app-counter [template]="decrement"></app-counter>
+
+    <ng-template #decrement>
+      <app-decrement></app-decrement>
     </ng-template>
   </div>
 

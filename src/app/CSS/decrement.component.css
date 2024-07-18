@@ -1,1 +1,9 @@
-/* Material UI CSS here */
+button[mat-raised-button] {
+    border-radius: 30px;
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 800;
+}
