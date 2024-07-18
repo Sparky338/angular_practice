@@ -27,14 +27,15 @@ import { counterReducer } from './counter.reducer';
 export class AppComponent {
   title = 'Gametime Hero score counter';
   count$!: Observable<number>;
-  score: Observable<number>;
+  score: number = 0;
 
   constructor(private store: Store<{count: number}>) {
     this.count$ = store.select('count');
     this.count$.subscribe({
-      next(value) {
+      next: (value) => {
         this.score = value;
-      }});
+      }
+    });
   }
 
   // IncrementComponent = IncrementComponent;
