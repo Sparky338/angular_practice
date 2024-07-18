@@ -5,9 +5,10 @@ import { IncrementModule } from './increment.module';
   selector: 'app-increment',
   standalone: true,
   imports: [],
-  templateUrl: './increment.component.html',
+  template: '<button>{{increase}}</button>',
   styleUrl: './increment.component.css'
 })
 export class IncrementComponent {
-
+  increase = "+"
+  //button does what? here
 }
