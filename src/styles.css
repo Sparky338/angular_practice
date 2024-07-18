@@ -9,4 +9,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background: #14617c;
   color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
