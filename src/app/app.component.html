@@ -332,6 +332,11 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<app-counter [template]="increment"></app-counter>
+
+<ng-template #increment>
+  <app-increment></app-increment>
+</ng-template>
 <!-- <NgModuleModule></NgModuleModule> -->
 {{IncrementModule}}
 <!-- <DecrementComponent></DecrementComponent> -->
