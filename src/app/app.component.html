@@ -1,14 +1,29 @@
-<app-counter [template]="increment"></app-counter>
+<div class="main-div">
 
-<ng-template #increment>
-  <app-increment></app-increment>
-</ng-template>
+  <h1>{{title}}</h1>
 
-<app-counter [template]="decrement"></app-counter>
+  <div class="score-and-buttons">
 
-<ng-template #decrement>
-  <app-decrement></app-decrement>
-</ng-template>
+    <!-- displays decrement button through counter component -->
+    <app-counter [template]="decrement"></app-counter>
+
+    <ng-template #decrement>
+      <app-decrement></app-decrement>
+    </ng-template>
+
+    <h1 class="score">{{score}}</h1>
+
+    <!-- displays increment button through counter component -->
+    <app-counter [template]="increment"></app-counter>
+
+    <ng-template #increment>
+      <app-increment></app-increment>
+    </ng-template>
+  </div>
+
+</div>
+
+<!-- Original plan for display. Had difficulty figuring out modules/ components -->
 <!-- <NgModuleModule></NgModuleModule> -->
 <!-- {{IncrementModule}} -->
 <!-- <DecrementComponent></DecrementComponent> -->

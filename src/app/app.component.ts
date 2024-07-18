@@ -15,6 +15,7 @@ import { DecrementComponent } from './components/decrement.component';
 })
 export class AppComponent {
   title = 'Gametime Hero score counter';
+  score = 0;
   // IncrementComponent = IncrementComponent;
   // IncrementModule = IncrementModule;
   // NgModuleModule = NgModuleModule;
