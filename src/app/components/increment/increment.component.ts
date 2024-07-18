@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { IncrementModule } from './increment.module';
 
 @Component({
   selector: 'app-increment',

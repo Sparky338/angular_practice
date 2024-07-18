@@ -337,6 +337,12 @@
 <ng-template #increment>
   <app-increment></app-increment>
 </ng-template>
+
+<app-counter [template]="decrement"></app-counter>
+
+<ng-template #decrement>
+  <app-decrement></app-decrement>
+</ng-template>
 <!-- <NgModuleModule></NgModuleModule> -->
 {{IncrementModule}}
 <!-- <DecrementComponent></DecrementComponent> -->

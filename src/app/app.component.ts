@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { IncrementComponent } from './components/increment/increment.component';
 import { IncrementModule } from './components/increment/increment.module';
 import { CounterComponent } from "./components/counter/counter.component";
+import { DecrementComponent } from './components/decrement.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, IncrementComponent, IncrementModule, CounterComponent],
+  imports: [RouterOutlet, IncrementComponent, DecrementComponent, IncrementModule, CounterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
