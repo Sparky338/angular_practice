@@ -3,7 +3,7 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 
 import {initializeApp} from 'firebase/app';
-import {getDatabase, set } from 'firebase/database';
+import {getDatabase, set, ref } from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDVrDKzQsMhALumJTkj-UGAqw5V8QjutGQ",
@@ -16,10 +16,14 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
 
-export const storeScores = async (score: number, currentDate:any) => {
-  // set(db, {score, currentDate})
+export const storeScore = async (score: number, currentDateTime: any) => {
+  const db = getDatabase(app);
+
+  set(ref(db), {
+    score: score,
+    dateTime: currentDateTime
+  });
 }
 
 bootstrapApplication(AppComponent, appConfig)
