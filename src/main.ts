@@ -18,8 +18,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-export const storeScores = async (score: number) => {
-
+export const storeScores = async (score: number, currentDate:any) => {
+  // set(db, {score, currentDate})
 }
 
 bootstrapApplication(AppComponent, appConfig)

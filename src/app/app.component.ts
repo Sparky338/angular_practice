@@ -5,6 +5,7 @@ import { IncrementComponent } from './components/increment/increment.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { DecrementComponent } from './components/decrement.component';
 import { Observable } from 'rxjs';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
@@ -15,6 +16,7 @@ import { Observable } from 'rxjs';
     IncrementComponent,
     DecrementComponent,
     CounterComponent,
+    DatePipe
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -32,4 +34,7 @@ export class AppComponent {
       }
     });
   }
+
+  currentDate = new Date();
+  date = DatePipe;
 }
