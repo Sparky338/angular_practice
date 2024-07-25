@@ -6,6 +6,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { DecrementComponent } from './components/decrement.component';
 import { Observable } from 'rxjs';
 import { DatePipe } from '@angular/common';
+import { SaveComponent } from './components/save/save.component';
 
 
 @Component({
@@ -16,7 +17,8 @@ import { DatePipe } from '@angular/common';
     IncrementComponent,
     DecrementComponent,
     CounterComponent,
-    DatePipe
+    DatePipe,
+    SaveComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
