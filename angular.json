@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular_practice": {
+    "angular_practice": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Angular_practice:build:production"
+              "buildTarget": "angular_practice:build:production"
             },
             "development": {
-              "buildTarget": "Angular_practice:build:development"
+              "buildTarget": "angular_practice:build:development"
             }
           },
           "defaultConfiguration": "development"
